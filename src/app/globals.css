@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+  --burgundy: #7A1B2D;
+  --burgundy-dark: #4A0E1C;
+  --gold: #C8A951;
+  --gold-light: #E8D5A0;
+  --cream: #FFF8F0;
+  --white: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  color: #333;
+  background-color: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--burgundy);
+  border-radius: 4px;
+}
+
+/* Decorative wave */
+.wave-divider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 60px;
+}
+
+/* Gold shimmer animation */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.gold-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--gold) 0%,
+    var(--gold-light) 50%,
+    var(--gold) 100%
+  );
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Announcement bar scroll */
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+  animation: scroll-left 20s linear infinite;
+}
+
+/* Float animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Fade in up */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Product card hover */
+.product-card {
+  transition: all 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px rgba(122, 27, 45, 0.15);
+}
+
+/* Button styles */
+.btn-gold {
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  color: var(--burgundy-dark);
+  font-weight: 600;
+  padding: 12px 32px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+.btn-gold:hover {
+  background: linear-gradient(135deg, var(--gold-light), var(--gold));
+  box-shadow: 0 4px 15px rgba(200, 169, 81, 0.4);
+  transform: translateY(-1px);
+}
+
+.btn-outline-gold {
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  font-weight: 500;
+  padding: 10px 30px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  background: transparent;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+.btn-outline-gold:hover {
+  background: var(--gold);
+  color: var(--burgundy-dark);
+}
+
+/* Ribbon/badge */
+.ribbon {
+  position: absolute;
+  top: 12px;
+  left: -5px;
+  background: var(--burgundy);
+  color: white;
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  z-index: 10;
+}
+.ribbon::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  border-width: 5px 5px 0 0;
+  border-style: solid;
+  border-color: var(--burgundy-dark) transparent transparent;
+}
