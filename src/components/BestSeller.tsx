@@ -1,52 +1,64 @@
 export default function BestSeller() {
+  const productImages = [
+    "/images/product-1.svg",
+    "/images/product-2.svg",
+    "/images/product-3.svg",
+  ];
+
   const products = [
     {
-      name: "Hộp Quà Yến Sào Cao Cấp",
+      name: "Hộp Quà Cưới Happy Wedding - Đỏ",
       price: "1.200.000đ",
       originalPrice: "1.500.000đ",
       badge: "Bán Chạy",
       rating: 5,
       reviews: 128,
+      image: productImages[0],
     },
     {
-      name: "Yến Sào Hộp Quà Hoàng Gia",
+      name: "Mật Ong Amber Whisper Cao Cấp",
       price: "2.500.000đ",
       originalPrice: "3.000.000đ",
       badge: "Yêu Thích",
       rating: 5,
       reviews: 95,
+      image: productImages[1],
     },
     {
-      name: "Tổ Yến Tinh Chế Nguyên Tổ",
+      name: "Hộp Quà Cưới Happy Wedding - Xanh",
       price: "800.000đ",
       originalPrice: "950.000đ",
       badge: null,
       rating: 5,
       reviews: 72,
+      image: productImages[2],
     },
     {
-      name: "Yến Sào Phiên Bản Giới Hạn",
+      name: "Combo Quà Cưới Đỏ & Xanh",
       price: "3.800.000đ",
       originalPrice: "4.500.000đ",
       badge: "Giới Hạn",
       rating: 5,
       reviews: 43,
+      image: productImages[0],
     },
     {
-      name: "Combo Yến Sào Gia Đình",
+      name: "Set Quà Tặng Mật Ong & Bánh",
       price: "2.100.000đ",
       originalPrice: "2.600.000đ",
       badge: null,
       rating: 4,
       reviews: 156,
+      image: productImages[1],
     },
     {
-      name: "Yến Sào Gói Nhỏ Tiện Lợi",
+      name: "Hộp Quà Cưới Xanh Nhỏ",
       price: "350.000đ",
       originalPrice: "450.000đ",
       badge: "Mới",
       rating: 5,
       reviews: 67,
+      image: productImages[2],
     },
   ];
 
@@ -81,9 +93,11 @@ export default function BestSeller() {
                 {product.badge && (
                   <div className="ribbon">{product.badge}</div>
                 )}
-                <div className="text-5xl sm:text-6xl group-hover:scale-110 transition-transform duration-500">
-                  🏺
-                </div>
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 absolute inset-0"
+                />
                 {/* Quick actions overlay */}
                 <div className="absolute inset-0 bg-burgundy/0 group-hover:bg-burgundy/10 transition-all duration-300 flex items-center justify-center">
                   <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex gap-2">
