@@ -30,7 +30,7 @@ export default function Header() {
                   <span className="text-gold font-serif text-xl font-bold">燕</span>
                 </div>
                 <div>
-                  <h1 className="text-gold font-serif text-xl font-bold tracking-wider">Yến Sào</h1>
+                  <h1 className="text-gold font-serif text-xl font-bold tracking-wider">FarMơ</h1>
                   <p className="text-gold-200 text-[10px] tracking-[0.2em] uppercase font-light">Cao Cấp</p>
                 </div>
               </a>

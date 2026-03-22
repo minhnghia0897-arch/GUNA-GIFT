@@ -11,12 +11,12 @@ export default function Footer() {
                 <span className="text-gold font-serif text-lg font-bold">燕</span>
               </div>
               <div>
-                <h3 className="text-gold font-serif text-lg font-bold">Yến Sào</h3>
+                <h3 className="text-gold font-serif text-lg font-bold">FarMơ</h3>
                 <p className="text-gold/50 text-[10px] tracking-[0.2em] uppercase">Cao Cấp</p>
               </div>
             </div>
             <p className="text-white/40 font-light text-sm leading-relaxed mb-6">
-              Chuyên cung cấp yến sào thiên nhiên cao cấp, chất lượng hàng đầu Việt Nam.
+              Chuyên cung cấp sản phẩm FarMơ thiên nhiên cao cấp, chất lượng hàng đầu Việt Nam.
             </p>
             {/* Social icons */}
             <div className="flex gap-3">
@@ -85,7 +85,7 @@ export default function Footer() {
       <div className="border-t border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-white/30 text-xs font-light">
-            &copy; 2026 Yến Sào Cao Cấp. Đã đăng ký bản quyền.
+            &copy; 2026 FarMơ Cao Cấp. Đã đăng ký bản quyền.
           </p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-white/30 hover:text-gold text-xs font-light transition-colors">

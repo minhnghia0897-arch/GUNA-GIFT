@@ -6,7 +6,7 @@ export default function VideoSection() {
         <div className="text-center mb-12">
           <p className="text-gold text-sm font-light tracking-[0.3em] uppercase mb-3">Hướng Dẫn</p>
           <h2 className="font-serif text-3xl sm:text-4xl text-burgundy mb-4">
-            Cách Chế Biến Yến Sào?
+            Cách Chế Biến FarMơ?
           </h2>
           <div className="w-20 h-[1px] bg-gold mx-auto" />
         </div>
@@ -26,7 +26,7 @@ export default function VideoSection() {
                   <path d="M8 5v14l11-7z" />
                 </svg>
               </button>
-              <p className="text-white font-serif text-xl">Cách Chưng Yến Sào Đúng Cách</p>
+              <p className="text-white font-serif text-xl">Cách Chế Biến FarMơ Đúng Cách</p>
               <p className="text-white/50 text-sm font-light mt-2">Xem video hướng dẫn chi tiết</p>
             </div>
 

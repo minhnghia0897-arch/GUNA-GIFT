@@ -34,11 +34,11 @@ export default function HeroSection() {
               <br />
               Của Sức Khỏe
               <br />
-              Với <span className="gold-shimmer">Yến Sào</span>
+              Với <span className="gold-shimmer">FarMơ</span>
             </h1>
 
             <p className="text-white/70 text-base font-light leading-relaxed mb-8 max-w-lg">
-              Yến sào thiên nhiên cao cấp, được tuyển chọn kỹ lưỡng từ những hang yến nguyên sơ.
+              FarMơ cao cấp, được tuyển chọn kỹ lưỡng từ những nguồn nguyên liệu thiên nhiên.
               Sản phẩm tinh khiết, giàu dinh dưỡng, mang đến sức khỏe và vẻ đẹp cho gia đình bạn.
             </p>
 
@@ -86,7 +86,7 @@ export default function HeroSection() {
             <div className="relative w-64 h-64 lg:w-80 lg:h-80 rounded-full bg-gradient-to-br from-gold/20 to-gold/5 border-2 border-gold/30 flex items-center justify-center animate-float shadow-2xl shadow-gold/10">
               <div className="text-center">
                 <div className="text-6xl lg:text-7xl mb-2">🏺</div>
-                <p className="text-gold font-serif text-lg font-semibold">Yến Sào</p>
+                <p className="text-gold font-serif text-lg font-semibold">FarMơ</p>
                 <p className="text-gold/60 text-xs font-light">Cao Cấp</p>
               </div>
             </div>

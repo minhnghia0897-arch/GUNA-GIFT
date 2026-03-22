@@ -16,7 +16,7 @@ export default function WhyChooseUs() {
         </svg>
       ),
       title: "Nguyên Liệu Cao Cấp",
-      desc: "Tuyển chọn kỹ lưỡng từ các nguồn yến sào chất lượng hàng đầu Việt Nam.",
+      desc: "Tuyển chọn kỹ lưỡng từ các nguồn FarMơ chất lượng hàng đầu Việt Nam.",
     },
     {
       icon: (

@@ -6,13 +6,13 @@ export default function AboutSection() {
         <div className="text-center mb-16">
           <p className="text-gold text-sm font-light tracking-[0.3em] uppercase mb-3">Về Chúng Tôi</p>
           <h2 className="font-serif text-3xl sm:text-4xl text-burgundy mb-4">
-            Yến Sào Thiên Nhiên Cao Cấp
+            FarMơ Thiên Nhiên Cao Cấp
             <br />
             <span className="text-gold italic">Với Nguyên Liệu Tinh Khiết</span>
           </h2>
           <div className="w-20 h-[1px] bg-gold mx-auto mb-6" />
           <p className="text-gray-500 font-light max-w-2xl mx-auto leading-relaxed">
-            Chúng tôi tự hào mang đến những sản phẩm yến sào chất lượng hàng đầu,
+            Chúng tôi tự hào mang đến những sản phẩm FarMơ chất lượng hàng đầu,
             được chế biến từ nguồn nguyên liệu thiên nhiên, tinh khiết và an toàn.
           </p>
         </div>
@@ -27,8 +27,8 @@ export default function AboutSection() {
             },
             {
               icon: "🏺",
-              title: "Yến Sào\nChất Lượng",
-              desc: "Tuyển chọn kỹ lưỡng từ những hang yến nguyên sơ, đảm bảo chất lượng từng sợi yến.",
+              title: "FarMơ\nChất Lượng",
+              desc: "Tuyển chọn kỹ lưỡng từ những nguồn nguyên liệu thiên nhiên, đảm bảo chất lượng từng sản phẩm.",
             },
             {
               icon: "⚙️",

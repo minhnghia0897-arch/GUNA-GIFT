@@ -20,7 +20,7 @@ export default function ContactSection() {
               <span className="text-gold italic">thêm?</span>
             </h2>
             <p className="text-white/60 font-light text-sm leading-relaxed mb-8">
-              Liên hệ với chúng tôi để được tư vấn miễn phí về các sản phẩm yến sào cao cấp.
+              Liên hệ với chúng tôi để được tư vấn miễn phí về các sản phẩm FarMơ cao cấp.
               Đội ngũ tư vấn viên luôn sẵn sàng phục vụ bạn.
             </p>
             <a
